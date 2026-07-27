@@ -221,7 +221,12 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 @media(max-width:520px){.case-note dl{grid-template-columns:1fr;gap:2px 0}.case-note dt{margin-top:8px}}
 /* 症例写真（各画像がBefore|After入りの合成カード） */
 .case-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media(max-width:560px){.case-photos{grid-template-columns:1fr;max-width:340px;margin-inline:auto}}
+/* スマホは横スワイプのカルーセル（次の写真が少し覗く＝スワイプ可能と分かる） */
+@media(max-width:560px){
+  .case-photos{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;max-width:none;margin-inline:0;padding-bottom:8px;scrollbar-width:none}
+  .case-photos::-webkit-scrollbar{display:none}
+  .case-photos .photo-slot{flex:0 0 80%;scroll-snap-align:center}
+}
 .photo-slot img{width:100%;display:block;border-radius:4px;aspect-ratio:4/5;object-fit:cover;background:#000}
 .ph-fallback{display:none;aspect-ratio:4/5;border-radius:4px;border:1px dashed color-mix(in srgb,var(--accent) 55%,var(--hairline));background:var(--surface-2);place-items:center;text-align:center;font-size:11.5px;color:var(--sub);padding:14px;line-height:1.7}
 .ph-fallback .lbl{display:block;font-size:12px;letter-spacing:.14em;color:var(--accent-ink);font-weight:700;margin-bottom:6px}
@@ -235,7 +240,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 <!-- ヘッダー（既存サイトのヘッダーに置き換えてもOK） -->
 <header class="site-header">
   <div class="inner">
-    <a class="brand" href="/ja-jp/">ZETITH <em>BEAUTY CLINIC</em></a>
+    <a class="brand" href="/ja-jp/">Zetith <em>Beauty&nbsp;Clinic</em></a>
     <div class="header-right">
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="ライト／ダーク切り替え">◐</button>
       <a class="header-cta" href="/reserve/">無料カウンセリング</a>
@@ -272,7 +277,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
     <div class="avatar" aria-hidden="true"></div>
     <div>
       <b>監修：羽根 和秀（はね かずひで）｜Zetith Beauty Clinic 福岡院 院長</b>
-      <span>神戸大学医学部卒／鼻整形2,000件以上／クローズド法を専門</span>
+      <span>鼻整形2,000件以上／クローズド法を専門</span>
     </div>
   </div>
 
@@ -284,7 +289,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
       <li><a href="#what">そもそも「クローズド法」とは？</a></li>
       <li><a href="#vs">オープン法との違い（比較表）</a></li>
       <li><a href="#merit">クローズド法のメリット</a></li>
-      <li><a href="#demerit">デメリット・向かないケース</a></li>
+      <li><a href="#demerit">向かないケース・注意点</a></li>
       <li><a href="#menu">お悩み別・受けられる施術と症例</a></li>
       <li><a href="#price">費用（料金プラン）</a></li>
       <li><a href="#downtime">ダウンタイムと経過</a></li>
@@ -339,8 +344,8 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
   <h3>仕上がりが安定しやすい<span class="en">stable finish</span></h3>
   <p>皮膚を大きく開かないため、縫合時のテンション（張り）の影響を受けにくく、<strong>術中に作った形を最終的な仕上がりまで保ちやすい</strong>のが技術的な利点です。腫れの出方も抑えやすく、術直後の見た目にまでこだわって仕上げられます。</p>
 
-  <h2 id="demerit"><span class="num">Section 04</span>デメリット・向かないケース（正直に）</h2>
-  <p>良い面ばかりではありません。納得して選んでいただくために、限界も正直にお伝えします。</p>
+  <h2 id="demerit"><span class="num">Section 04</span>クローズド法が向かないケースもあります</h2>
+  <p>クローズド法はメリットの多い方法ですが、鼻の状態によってはオープン法のほうが適するケースもあります。ご自身に合った方法を選んでいただけるよう、事前に知っておきたいポイントをまとめました。</p>
   <div class="cards">
     <div class="card"><h4>複雑な修正・著しい変形</h4><p>生まれつきの著しい変形や複雑な修正では、広い術野を確保できるオープン法が向くことがあります。</p></div>
     <div class="card"><h4>医師の技術差が出やすい</h4><p>限られた視野で正確に操作するため、術者の経験と技術が仕上がりを大きく左右します。</p></div>
@@ -570,8 +575,8 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 </article>
 
 <footer class="site-footer">
-  <span class="brand">ZETITH BEAUTY CLINIC 福岡院</span>
-  <p>福岡県福岡市［住所を記載］／ TEL: ［電話番号］<br>© Zetith Beauty Clinic. All rights reserved.</p>
+  <span class="brand">Zetith Beauty Clinic 福岡院</span>
+  <p>〒810-0001 福岡県福岡市中央区天神2丁目3-24 天神ルーチェビル 3F<br>TEL: 092-753-8006<br>© Zetith Beauty Clinic. All rights reserved.</p>
 </footer>
 
 <script>
