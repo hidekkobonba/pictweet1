@@ -231,6 +231,35 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 .ph-fallback{display:none;aspect-ratio:4/5;border-radius:4px;border:1px dashed color-mix(in srgb,var(--accent) 55%,var(--hairline));background:var(--surface-2);place-items:center;text-align:center;font-size:11.5px;color:var(--sub);padding:14px;line-height:1.7}
 .ph-fallback .lbl{display:block;font-size:12px;letter-spacing:.14em;color:var(--accent-ink);font-weight:700;margin-bottom:6px}
 .ph-fallback .hint{display:block;margin-top:8px;font-size:10px;opacity:.75;word-break:break-all}
+
+/* ===== スマホ最適化（読みやすい行間・余白・見出しサイズ） ===== */
+@media(max-width:600px){
+  body{font-size:15.5px;line-height:1.92;letter-spacing:.01em}
+  .article{padding:0 18px 76px}
+  .br-pc{display:none}                 /* h1の強制改行をやめ、自然に折り返す */
+  h1{font-size:24px;line-height:1.52;margin:.4em 0 .5em}
+  .lead{font-size:15.5px;line-height:1.95;margin:20px 0}
+  .article h2{font-size:19.5px;line-height:1.5;margin:46px 0 14px;padding-top:20px}
+  .article h2 .num{letter-spacing:.2em;margin-bottom:6px}
+  .article h3{font-size:16.5px;margin:28px 0 10px}
+  .article h3 .en{display:inline-block;margin:2px 0 0 0}
+  .article p{margin:0 0 16px}
+  .toc{padding:18px 18px}
+  .toc li{font-size:14px}
+  .voice,.callout{font-size:14px;padding:15px 16px}
+  .risk{padding:18px 18px}
+  .cards{gap:12px}
+  .cta-band{padding:32px 20px;margin:52px 0 22px}
+  .cta-band h2{font-size:21px}
+  .cta-band p{font-size:13.5px}
+  .btn{padding:13px 22px;font-size:14px}
+  .cta-buttons{gap:10px}
+  .faq summary{font-size:14.5px}
+  .author-box{padding:20px}
+  table.data{font-size:13px}
+  table.data th,table.data td{padding:11px 12px}
+  .hero-img,.hero-visual{aspect-ratio:16/10}
+}
 </style>
 </head>
 <body>
@@ -259,7 +288,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 <article class="article" id="top">
   <div class="hero-head">
     <span class="eyebrow">Nose Surgery ｜ 鼻整形コラム</span>
-    <h1>【福岡】鼻整形のクローズド法とは？<br>オープン法との違い・傷跡・費用・ダウンタイムを医師が解説</h1>
+    <h1>【福岡】鼻整形のクローズド法とは？<br class="br-pc">オープン法との違い・傷跡・費用・ダウンタイムを医師が解説</h1>
     <div class="meta">
       <span class="tag">福岡 鼻整形</span>
       <span class="tag">クローズド法</span>
@@ -554,7 +583,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
         <div class="role">Zetith Beauty Clinic 福岡院 院長／美容外科</div>
       </div>
     </div>
-    <p class="bio">2021年、神戸大学医学部を卒業。美容外科の道へ進み、大阪院院長を経て、2025年より<strong>Zetith Beauty Clinic 福岡院の院長</strong>を務める。これまでに<strong>鼻整形2,000件以上</strong>を担当。皮膚の外側に傷を残さない<strong>クローズド法</strong>を軸としながら、肋軟骨を用いた全自家組織の鼻整形やデザイン性の高い施術まで、患者のニーズに応じて幅広い術式を使い分ける。傷を出さずにしっかりと変化を出す施術を得意とし、術直後の仕上がりまで丁寧に整えることを大切にしている。</p>
+    <p class="bio">2021年、神戸大学医学部を卒業。美容外科の道へ進み、前職で大阪院院長を経て、2025年より<strong>Zetith Beauty Clinic 福岡院の院長</strong>を務める。これまでに<strong>鼻整形2,000件以上</strong>を担当。皮膚の外側に傷を残さない<strong>クローズド法</strong>を軸としながら、肋軟骨を用いた全自家組織の鼻整形やデザイン性の高い施術まで、患者のニーズに応じて幅広い術式を使い分ける。傷を出さずにしっかりと変化を出す施術を得意とし、術直後の仕上がりまで丁寧に整えることを大切にしている。</p>
     <ul class="timeline">
       <li><span class="yr">2021</span><span>神戸大学医学部 卒業</span></li>
       <li><span class="yr">2023</span><span>グローバルビューティークリニック 入職</span></li>
