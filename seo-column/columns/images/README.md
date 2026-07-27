@@ -22,9 +22,9 @@
 
 | ファイル名 | 用途 | 推奨サイズ |
 |---|---|---|
-| `illust-closed-incision.png` | クローズド法の切開位置の図解 | 横長 1200×675px |
-| `illust-closed-vs-open.png` | クローズド法 vs オープン法の切開位置比較 | 横長 1200×675px |
-| `illust-graft-cartilage.png` | 軟骨（肋軟骨・耳介・鼻中隔）の採取部位 | 横長 1200×675px |
+| `illust-closed-incision.jpg` | クローズド法の切開位置の図解 | 横長 1200×675px |
+| `illust-closed-vs-open.jpg` | クローズド法 vs オープン法の切開位置比較 | 横長 1200×675px |
+| `illust-graft-cartilage.jpg` | 軟骨（肋軟骨・耳介・鼻中隔）の採取部位 | 横長 1200×675px |
 
 ## SNSシェア用（任意）
 
