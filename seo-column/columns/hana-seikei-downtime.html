@@ -87,6 +87,8 @@ h1{font-family:var(--serif);font-weight:700;font-size:31px;line-height:1.58;marg
 .avatar{width:50px;height:50px;border-radius:50%;flex:0 0 auto;background:radial-gradient(circle at 32% 30%,color-mix(in srgb,var(--accent) 60%,#fff),var(--accent) 70%,var(--green))}
 .supervisor b{display:block;font-size:13.5px;font-family:var(--serif);letter-spacing:.02em}
 .supervisor span{color:var(--sub);font-size:12px}
+img.avatar{object-fit:cover}
+.avatar-ph{display:none}
 
 .toc{border:1px solid var(--hairline);border-radius:4px;background:var(--surface);padding:20px 22px;margin:30px 0}
 .toc .toc-h{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:13px;letter-spacing:.16em;margin:0 0 12px;color:var(--accent-ink);text-transform:uppercase}
@@ -274,7 +276,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
   <div class="hero-visual" style="display:none"><p>※ アイキャッチ画像 images/hero.jpg</p></div>
 
   <div class="supervisor">
-    <div class="avatar" aria-hidden="true"></div>
+    <img class="avatar" src="images/hane.jpg" alt="羽根 和秀 医師" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="avatar avatar-ph" aria-hidden="true"></span>
     <div>
       <b>監修：羽根 和秀（はね かずひで）｜Zetith Beauty Clinic 福岡院 院長</b>
       <span>鼻整形2,000件以上／クローズド法を専門</span>
@@ -392,7 +394,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 
   <div class="author-box">
     <div class="top">
-      <div class="avatar" aria-hidden="true"></div>
+      <img class="avatar" src="images/hane.jpg" alt="羽根 和秀 医師" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="avatar avatar-ph" aria-hidden="true"></span>
       <div>
         <b>羽根 和秀（はね かずひで）</b>
         <div class="role">Zetith Beauty Clinic 福岡院 院長／美容外科</div>
