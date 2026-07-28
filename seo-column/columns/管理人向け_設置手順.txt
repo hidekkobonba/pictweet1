@@ -1,30 +1,57 @@
 ============================================================
  Zetith Beauty Clinic  コラム設置手順（管理人さま向け）
-                                         ※ 最終版
+                                         ※ 最新版
 ============================================================
 
-鼻整形コラム 全5ページ（一覧＋記事4本）と、使用画像（images・14枚）が
+鼻整形コラム 全7ページ（一覧＋記事6本）と、使用画像（images）が
 入っています。院長の顔写真・Instagramリンク・リール動画（埋め込み）も
 設定済みです。
+
+★ 重要（先にお読みください）★
+  「貴族手術」ページは現在【画像・料金の確定待ち】です。そのまま公開すると
+  症例・図解の枠がプレースホルダー表示（グレーの点線枠）になります。
+  → 下の「■ 公開を保留するページ」を必ずご確認ください。
 
 ------------------------------------------------------------
 ■ フォルダ構成（この位置関係のまま、まるごとアップしてください）
 ------------------------------------------------------------
 
   columns/
-   ├─ index.html                 … コラム一覧（トップ）  → /columns/
-   ├─ fukuoka-hana-seikei.html   … 柱：クローズド法 総合 → /columns/fukuoka-hana-seikei
-   ├─ dango-hana-fukuoka.html    … 団子鼻               → /columns/dango-hana-fukuoka
-   ├─ hana-seikei-barenai.html   … バレない・傷跡        → /columns/hana-seikei-barenai
-   ├─ hana-seikei-downtime.html  … ダウンタイム          → /columns/hana-seikei-downtime
-   └─ images/                     … 上記が読み込む画像（14枚）
+   ├─ index.html                    … コラム一覧（トップ）      → /columns/
+   ├─ fukuoka-hana-seikei.html      … 柱：クローズド法 総合      → /columns/fukuoka-hana-seikei
+   ├─ hana-seikei-jutsushiki.html   … 術式まるわかりガイド(ハブ) → /columns/hana-seikei-jutsushiki
+   ├─ bichukaku-encho-fukuoka.html  … 鼻中隔延長                → /columns/bichukaku-encho-fukuoka
+   ├─ kizoku-shujutsu-fukuoka.html  … 貴族手術 ※公開保留         → /columns/kizoku-shujutsu-fukuoka
+   ├─ dango-hana-fukuoka.html       … 団子鼻                    → /columns/dango-hana-fukuoka
+   ├─ hana-seikei-barenai.html      … バレない・傷跡             → /columns/hana-seikei-barenai
+   ├─ hana-seikei-downtime.html     … ダウンタイム              → /columns/hana-seikei-downtime
+   └─ images/                        … 上記が読み込む画像
         ├─ hero.jpg / ogp.jpg(任意)
-        ├─ hane.jpg               … 院長の顔写真
-        ├─ illust-*.jpg (図解3枚)
-        └─ case-*.jpg (症例9枚)
+        ├─ hane.jpg                  … 院長の顔写真
+        ├─ illust-*.jpg (図解)
+        └─ case-*.jpg (症例)
 
   ★ HTMLと images フォルダは必ず「セット」で、同じ位置関係のまま設置。
     バラすと画像が表示されません。
+
+------------------------------------------------------------
+■ 公開を保留するページ（貴族手術）
+------------------------------------------------------------
+
+  kizoku-shujutsu-fukuoka.html（貴族手術）は、以下がそろってから公開してください。
+  それまでは非公開（下書き）のままにしておくことを推奨します。
+
+   (1) 症例・図解の画像（制作側で差し替え予定）
+        ・images/case-kizoku-front.jpg   … 症例 正面（術前｜術後）
+        ・images/case-kizoku-oblique.jpg … 症例 斜め（術前｜術後）
+        ・images/case-kizoku-side.jpg    … 症例 横（術前｜術後）
+        ・images/illust-kizoku.jpg       … 図解（鼻翼基部に素材を入れる位置）
+   (2) 料金の確定（現在は「カウンセリングにてご案内」表記）
+
+  ※ 一覧（index.html）の貴族手術カードのサムネイルにも
+    case-kizoku-side.jpg を使用しています（画像が入るまで黒く表示されます）。
+  ※ これらは制作側で用意でき次第、差し替え版としてお渡しします。
+    他の6ページ（一覧＋記事5本）は今すぐ公開して問題ありません。
 
 ------------------------------------------------------------
 ■ 設置手順（3ステップ）
@@ -46,13 +73,16 @@
 ■ 動画（Instagramリール）について
 ------------------------------------------------------------
 
-  記事内にInstagramのリール動画を「埋め込み」で設置しています。
+  一部の記事（団子鼻・バレない・ダウンタイム）にInstagramのリール動画を
+  「埋め込み」で設置しています。
   ・動画ファイルの用意は不要です（Instagramから読み込まれます）。
   ・閲覧環境でInstagramの表示がブロックされている場合は、各動画の下の
     「Instagramで見る →」リンクから視聴できます。
+  ・リールが表示されるには、対象リールがInstagramで「公開」設定である
+    必要があります。
 
 ------------------------------------------------------------
-■ 公開前に差し替える箇所（各HTMLの先頭にコメントで記載）
+■ 公開前に差し替える箇所（各HTMLの <head> 内）
 ------------------------------------------------------------
 
   ・ canonical と og:url  … 実際の公開URLに合わせて確認・修正
@@ -72,7 +102,8 @@
 ■ 公開後（SEOのために）
 ------------------------------------------------------------
 
-  ・ Google Search Console に各ページのURL（5つ）を登録（インデックス登録）
+  ・ Google Search Console に各ページのURLを登録（インデックス登録）
+    （貴族手術ページは公開後に追加してください）
   ・ sitemap.xml に各URLを追加
 
   ご不明点は制作側までお気軽にご連絡ください。
