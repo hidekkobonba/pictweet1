@@ -1,0 +1,75 @@
+============================================================
+ Zetith Beauty Clinic  コラム設置手順（管理人さま向け）
+============================================================
+
+このパッケージには、鼻整形コラム4ページ（HTML）と、そのページで
+使う画像（images フォルダ・13枚）が入っています。
+
+------------------------------------------------------------
+■ フォルダ構成（この位置関係のまま、まるごとアップしてください）
+------------------------------------------------------------
+
+  columns/
+   ├─ fukuoka-hana-seikei.html   … 柱：クローズド法 総合ガイド
+   ├─ dango-hana-fukuoka.html    … 団子鼻
+   ├─ hana-seikei-barenai.html   … バレない・傷跡
+   ├─ hana-seikei-downtime.html  … ダウンタイム
+   └─ images/                     … 上記4ページが読み込む画像（13枚）
+        ├─ hero.jpg
+        ├─ illust-closed-incision.jpg / illust-closed-vs-open.jpg / illust-graft-cartilage.jpg
+        ├─ case-dango-front.jpg / -oblique.jpg / -side.jpg
+        ├─ case-ryubi-front.jpg / -oblique.jpg / -side.jpg
+        └─ case-tiplift-front.jpg / -oblique.jpg / -side.jpg
+
+  ★ HTMLは「images/○○.jpg」という相対パスで画像を読み込みます。
+    HTMLと images フォルダを "同じ位置" に置けば、そのまま画像が表示されます。
+    （バラバラに置いたり、images だけ別の場所に置くと表示されません）
+
+------------------------------------------------------------
+■ 設置手順（3ステップ）
+------------------------------------------------------------
+
+ 1. サーバーの公開フォルダに、この「columns」フォルダをまるごとアップロード。
+    （images も一緒に、同じ位置関係のままで）
+
+ 2. 各ページは次のURLで開ける想定です：
+      https://zetithbeautyclinic.com/columns/fukuoka-hana-seikei
+      https://zetithbeautyclinic.com/columns/dango-hana-fukuoka
+      https://zetithbeautyclinic.com/columns/hana-seikei-barenai
+      https://zetithbeautyclinic.com/columns/hana-seikei-downtime
+
+    ※ 拡張子なしURL（.html を付けない形）で開ける設定を前提にしています。
+      もしサーバーが対応していない場合は、制作側にご連絡ください。
+      「.html 付きURL」に一括変更したファイルをお渡しします。
+
+ 3. トップページの「お知らせ」等から、各コラムへリンクを貼る。
+      例）<a href="/columns/fukuoka-hana-seikei">【コラム】福岡の鼻整形・クローズド法とは？</a>
+
+------------------------------------------------------------
+■ 公開前に差し替える箇所（各HTMLファイルの先頭にコメントで記載）
+------------------------------------------------------------
+
+  ・ canonical と og:url  … 実際の公開URLに合わせて確認・修正
+     （現在は https://zetithbeautyclinic.com/columns/... で記載済み）
+  ・ og:image（SNSシェア用サムネ）… images/ogp.jpg を用意する場合は images に追加（任意）
+
+  ※ 住所・電話番号・予約URL・LINEリンクは設定済みです。
+
+------------------------------------------------------------
+■ WordPress で運用している場合
+------------------------------------------------------------
+
+  画像はメディアライブラリにアップロードし、HTML内の
+  src="images/○○.jpg" を、アップ後のURL
+  （例 https://zetithbeautyclinic.com/wp-content/uploads/... ）に置き換えてください。
+  本文（<article>...</article> 内）を固定ページに貼り付ける運用でもOKです。
+
+------------------------------------------------------------
+■ 公開後（SEOのために）
+------------------------------------------------------------
+
+  ・ Google Search Console に各ページのURLを登録（インデックス登録リクエスト）
+  ・ sitemap.xml に上記4つのURLを追加
+
+  ご不明点は制作側までお気軽にご連絡ください。
+============================================================
