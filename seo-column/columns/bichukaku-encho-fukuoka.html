@@ -179,6 +179,25 @@ figure{margin:30px 0}
 .illust .hint{color:var(--sub);font-size:12px}
 .fig-img{width:100%;border-radius:6px;display:block}
 figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:center;letter-spacing:.02em}
+/* 症例写真ブロック */
+.case{border:1px solid var(--hairline);border-radius:6px;background:var(--surface);padding:18px;box-shadow:var(--shadow)}
+.case-h{font-family:var(--serif);font-size:14px;color:var(--accent-ink);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--hairline);line-height:1.6}
+.case-note{margin-top:14px;border:1px solid var(--hairline);border-radius:4px;background:var(--surface-2);padding:14px 16px;font-size:12.5px}
+.case-note dl{display:grid;grid-template-columns:auto 1fr;gap:7px 14px;margin:0}
+.case-note dt{color:var(--accent-ink);font-weight:700;white-space:nowrap}
+.case-note dd{margin:0;color:var(--ink)}
+.case-note .fine{margin:12px 0 0;color:var(--sub);font-size:11px;line-height:1.75}
+@media(max-width:520px){.case-note dl{grid-template-columns:1fr;gap:2px 0}.case-note dt{margin-top:8px}}
+.case-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:560px){
+  .case-photos{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;max-width:none;margin-inline:0;padding-bottom:8px;scrollbar-width:none}
+  .case-photos::-webkit-scrollbar{display:none}
+  .case-photos .photo-slot{flex:0 0 80%;scroll-snap-align:center}
+}
+.photo-slot img{width:100%;display:block;border-radius:4px;aspect-ratio:4/5;object-fit:cover;background:#000}
+.ph-fallback{display:none;aspect-ratio:4/5;border-radius:4px;border:1px dashed color-mix(in srgb,var(--accent) 55%,var(--hairline));background:var(--surface-2);place-items:center;text-align:center;font-size:11.5px;color:var(--sub);padding:14px;line-height:1.7}
+.ph-fallback .lbl{display:block;font-size:12px;letter-spacing:.14em;color:var(--accent-ink);font-weight:700;margin-bottom:6px}
+.ph-fallback .hint{display:block;margin-top:8px;font-size:10px;opacity:.75;word-break:break-all}
 
 /* ===== スマホ最適化 ===== */
 @media(max-width:600px){
@@ -267,6 +286,7 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
       <li><a href="#vs-strut">ストラットとの違い</a></li>
       <li><a href="#material">耳介軟骨と肋軟骨の使い分け</a></li>
       <li><a href="#method">当院の鼻中隔延長（クローズド法）</a></li>
+      <li><a href="#case">症例（正面・斜め・横）</a></li>
       <li><a href="#price">費用</a></li>
       <li><a href="#downtime">ダウンタイム</a></li>
       <li><a href="#risk">リスク・副作用</a></li>
@@ -348,7 +368,27 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
   </figure>
   <div class="callout"><b>オープン法を選ぶこともあります：</b> 大きな延長や、他院で鼻中隔延長を受けたあとの<strong>修正で内部を直接確認する必要がある場合</strong>は、オープン法を選ぶこともあります。方法にこだわるのではなく、鼻の状態に合わせて選びます。クローズド法とオープン法の違いは<a href="/columns/fukuoka-hana-seikei">総合ガイド</a>もご覧ください。</div>
 
-  <h2 id="price"><span class="num">Section 06</span>費用</h2>
+  <h2 id="case"><span class="num">Section 06</span>症例（正面・斜め・横）</h2>
+  <p>当院は<strong>正面・斜め・横の3方向</strong>すべての症例を掲載しています（鼻は立体的なパーツで、特に鼻中隔延長は横顔での変化が大きいためです）。</p>
+  <figure class="case">
+    <div class="case-h">症例｜鼻先が上向き・短鼻／クローズド法：鼻中隔延長</div>
+    <div class="case-photos">
+      <div class="photo-slot"><img src="images/case-tiplift-front.jpg" alt="鼻中隔延長 クローズド法 正面 術前・術後" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="ph-fallback"><span><span class="lbl">正面</span>術前 ｜ 術後<span class="hint">images/case-tiplift-front.jpg</span></span></div></div>
+      <div class="photo-slot"><img src="images/case-tiplift-oblique.jpg" alt="鼻中隔延長 クローズド法 斜め 術前・術後" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="ph-fallback"><span><span class="lbl">斜め</span>術前 ｜ 術後<span class="hint">images/case-tiplift-oblique.jpg</span></span></div></div>
+      <div class="photo-slot"><img src="images/case-tiplift-side.jpg" alt="鼻中隔延長 クローズド法 横 術前・術後" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="ph-fallback"><span><span class="lbl">横</span>術前 ｜ 術後<span class="hint">images/case-tiplift-side.jpg</span></span></div></div>
+    </div>
+    <div class="case-note">
+      <dl>
+        <dt>施術内容</dt><dd>クローズド法による鼻中隔延長</dd>
+        <dt>料　金</dt><dd>¥880,000〜（素材・構成により変動）</dd>
+        <dt>主なリスク・副作用</dt><dd>腫れ・内出血・左右差・鼻先の硬さ・後戻り・感染・仕上がりの個人差 等</dd>
+        <dt>ダウンタイム</dt><dd>約1〜2週間</dd>
+      </dl>
+      <p class="fine">※ 正面・斜め・横の3方向を掲載しています。効果には個人差があり、リスク・副作用を伴います。自由診療（保険適用外）。</p>
+    </div>
+  </figure>
+
+  <h2 id="price"><span class="num">Section 07</span>費用</h2>
   <p>鼻中隔延長の費用は、<strong>素材（耳介軟骨か肋軟骨か）</strong>によって変わります（税込・セット料金の目安）。鼻尖形成など他の術式を組み合わせる場合は、内容に応じて変わります。</p>
   <div class="table-wrap">
     <table class="data">
@@ -362,10 +402,10 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
   </div>
   <div class="callout"><b>別途費用：</b> 静脈麻酔 ¥55,000／全身麻酔 ¥209,000／術前検査 ¥17,600／お薬代（処方に応じて）。モニター制度（部分・全額）もあります。他の術式との組み合わせ費用はカウンセリングでお見積りします。術式ごとの料金は<a href="/columns/hana-seikei-jutsushiki#price">術式ガイドの費用パート</a>もご覧ください。</div>
 
-  <h2 id="downtime"><span class="num">Section 07</span>ダウンタイム</h2>
+  <h2 id="downtime"><span class="num">Section 08</span>ダウンタイム</h2>
   <p>鼻中隔延長のダウンタイムの目安は、<strong>腫れ・内出血が1〜2週間ほどで落ち着き、ギプス固定は約7日（その頃に抜糸）</strong>です。鼻先の細かな腫れや硬さは数ヶ月かけて徐々になじんでいきます。<strong>肋軟骨を採取した場合は、胸の傷の痛みが数日〜1週間程度</strong>続くことがあります。経過には個人差があり、大きな予定の1〜2か月前までに施術を終えるスケジュールがおすすめです。施術別の経過は<a href="/columns/hana-seikei-downtime">ダウンタイム完全ガイド</a>で解説しています。</p>
 
-  <h2 id="risk"><span class="num">Section 08</span>リスク・副作用</h2>
+  <h2 id="risk"><span class="num">Section 09</span>リスク・副作用</h2>
   <div class="risk">
     <h3>必ずご確認ください</h3>
     <p>鼻中隔延長は変化量が大きい分、以下のようなリスク・副作用が生じる可能性があります。カウンセリングで一人ひとりに合わせて詳しくご説明します。</p>
@@ -379,11 +419,11 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
     </ul>
   </div>
 
-  <h2 id="revision"><span class="num">Section 09</span>他院修正（鼻中隔延長後の修正）</h2>
+  <h2 id="revision"><span class="num">Section 10</span>他院修正（鼻中隔延長後の修正）</h2>
   <p>「他院で鼻中隔延長を受けたが、鼻先が曲がった・上がってきた・思った向きと違う」——こうした<strong>鼻中隔延長後の修正</strong>のご相談にも対応しています。修正では、内部の状態を確認したうえで、必要に応じて<strong>肋軟骨などの自家組織で土台から作り直す</strong>こともあります。</p>
   <p>また、他院で入れた<strong>メッシュやオステオポールの除去</strong>と合わせて整え直すケースもあります。修正手術は初回より難しくなることが多く、状態によって方針が大きく変わるため、まずは現在の鼻を診察させてください。対応できる術式の全体像は<a href="/columns/hana-seikei-jutsushiki#revision">術式ガイドの他院修正</a>でも解説しています。</p>
 
-  <h2 id="faq"><span class="num">Section 10</span>よくある質問</h2>
+  <h2 id="faq"><span class="num">Section 11</span>よくある質問</h2>
   <div class="faq">
     <details><summary>鼻中隔延長とストラット、どちらが自分に合いますか？</summary><p>鼻先を大きく下げたい・長さを出したい場合は鼻中隔延長、団子鼻で鼻先の支えを整えたい場合はストラットが向くことが多いです。望む変化量によって変わるため、カウンセリングで診察のうえご提案します。</p></details>
     <details><summary>耳介軟骨と肋軟骨、どちらを選べばいいですか？</summary><p>中等度までの延長は耳介軟骨で仕上げられることも多く、大きな延長・強い支え・修正では肋軟骨が向きます。傷の位置（耳の裏か胸か）も含めて、診察でご相談しながら決めます。</p></details>
@@ -391,6 +431,11 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
     <details><summary>鼻先は硬くなりますか？</summary><p>鼻先を支える土台を作るため、術後は鼻先が動きにくく・硬く感じることがあります。多くは時間とともに気にならなくなっていきますが、感じ方には個人差があります。</p></details>
     <details><summary>他院で受けた鼻中隔延長の修正もできますか？</summary><p>鼻先の曲がりや後戻りなど、鼻中隔延長後の修正にも対応しています。状態により方針が変わるため、診察で判断します。必要に応じて自家組織で土台から作り直します。</p></details>
   </div>
+
+  <figure>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTm53xpCZwl/" data-instgrm-version="14" style="max-width:400px;width:calc(100% - 2px);min-width:280px;margin:22px auto"><a href="https://www.instagram.com/reel/DTm53xpCZwl/" target="_blank" rel="noopener noreferrer" style="display:block;padding:22px;text-align:center;color:#8C6C25;text-decoration:none">Instagramでリールを見る →</a></blockquote>
+    <figcaption>肋軟骨で鼻中隔延長を行った患者様の術後面会の様子（<a href="https://www.instagram.com/reel/DTm53xpCZwl/" target="_blank" rel="noopener noreferrer">院長Instagramで見る →</a>）</figcaption>
+  </figure>
 
   <div class="author-box">
     <div class="top">
@@ -445,5 +490,6 @@ figure figcaption{font-size:12px;color:var(--sub);margin-top:9px;text-align:cent
 ]}
 </script>
 
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
