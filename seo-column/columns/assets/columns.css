@@ -107,7 +107,7 @@ h1,h2,h3,h4{margin:0}
 .theme-toggle{border:1px solid var(--border);background:var(--surface);color:var(--text-subtle);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px;line-height:1;display:grid;place-items:center}
 .theme-toggle:hover{color:var(--gold-ink);border-color:var(--gold)}
 
-.breadcrumb{font-size:11.5px;color:var(--text-subtle);letter-spacing:.02em;padding:16px 0 0}
+.breadcrumb{font-size:11.5px;color:var(--text-subtle);letter-spacing:.02em;padding-top:16px}
 .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
 .breadcrumb a{color:var(--text-subtle);text-decoration:none}
 .breadcrumb a:hover{color:var(--gold-ink)}
