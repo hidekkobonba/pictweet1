@@ -208,6 +208,8 @@ h1,h2,h3,h4{margin:0}
 
 .article-hero-image{margin:24px 0 0;border-radius:var(--radius-md);overflow:hidden;background:var(--surface-soft)}
 .article-hero-image img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+/* 図解などをヒーローに使う場合は全体を表示（トリミングしない） */
+.article-hero-image.is-illust img{aspect-ratio:auto;height:auto;object-fit:contain}
 
 /* コンパクト監修医 */
 .doctor-profile{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--surface-soft);
