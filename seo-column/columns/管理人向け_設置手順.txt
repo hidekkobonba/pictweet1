@@ -3,7 +3,7 @@
                                     ※ 最新版（モバイルファースト刷新）
 ============================================================
 
-鼻整形コラム 全8ページ（一覧＋記事7本）と、使用画像（images）、
+鼻整形コラム 全9ページ（一覧＋記事8本）と、使用画像（images）、
 共通デザインファイル（assets）が入っています。院長の顔写真・
 Instagramリンク・リール動画（埋め込み）も設定済みです。
 
@@ -17,6 +17,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
    ├─ hana-seikei-jutsushiki.html   … 術式まるわかりガイド(ハブ) → /columns/hana-seikei-jutsushiki
    ├─ bichukaku-encho-fukuoka.html  … 鼻中隔延長                → /columns/bichukaku-encho-fukuoka
    ├─ kizoku-shujutsu-fukuoka.html  … 貴族手術                  → /columns/kizoku-shujutsu-fukuoka
+   ├─ neko-shujutsu-fukuoka.html    … 猫手術                    → /columns/neko-shujutsu-fukuoka
    ├─ dango-hana-fukuoka.html       … 団子鼻                    → /columns/dango-hana-fukuoka
    ├─ hana-seikei-barenai.html      … バレない・傷跡             → /columns/hana-seikei-barenai
    ├─ hana-seikei-downtime.html     … ダウンタイム              → /columns/hana-seikei-downtime
@@ -65,7 +66,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
   ・ og:image（SNSサムネ）… images/ogp.jpg を用意する場合は images に追加（任意）
 
   ※ 住所・電話番号・予約URL・LINE・Instagram（@zetith_hane）・院長写真は設定済みです。
-  ※ 全8ページとも公開可能な状態です（以前ご案内した「貴族手術ページの公開保留」は解消済み）。
+  ※ 全9ページとも公開可能な状態です（以前ご案内した「貴族手術ページの公開保留」は解消済み）。
 
 ------------------------------------------------------------
 ■ WordPress で運用している場合
@@ -79,7 +80,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
 ■ 公開後（SEOのために）
 ------------------------------------------------------------
 
-  ・ Google Search Console に各ページのURL（8つ）を登録（インデックス登録）
+  ・ Google Search Console に各ページのURL（9つ）を登録（インデックス登録）
   ・ sitemap.xml に各URLを追加
 
   ご不明点は制作側までお気軽にご連絡ください。
