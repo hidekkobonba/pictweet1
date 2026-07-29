@@ -281,6 +281,13 @@ table.cmp th[scope=row]{font-weight:700;color:var(--text);background:color-mix(i
 table.cmp td.num{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
 table.cmp tbody tr:last-child th,table.cmp tbody tr:last-child td{border-bottom:none}
 
+/* タイムライン（経過） */
+ol.flow{counter-reset:flow;list-style:none;padding:0;margin:6px 0 22px}
+ol.flow li{counter-increment:flow;position:relative;padding:2px 0 20px 44px;border-left:1px solid var(--border);margin-left:14px;font-size:15px;line-height:1.8}
+ol.flow li:last-child{border-left-color:transparent;padding-bottom:0}
+ol.flow li::before{content:counter(flow);position:absolute;left:-15px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--surface);border:1px solid var(--gold);color:var(--gold-ink);font-family:var(--serif);font-size:13px;display:grid;place-items:center}
+ol.flow strong{color:var(--text)}
+
 /* 補足ノート（使いすぎない） */
 .callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:var(--radius-md);padding:16px 18px;margin:0 0 22px;font-size:14.5px;line-height:1.8}
 .callout b{color:var(--gold-ink)}
@@ -364,6 +371,9 @@ table.cmp tbody tr:last-child th,table.cmp tbody tr:last-child td{border-bottom:
 .author-box b{font-size:16px;font-family:var(--serif)}
 .author-box .role{color:var(--gold-ink);font-size:12px;margin-top:3px}
 .author-box .bio{font-size:13.5px;color:var(--text-subtle);line-height:1.85;margin:0 0 14px}
+.timeline{list-style:none;margin:14px 0;padding:0;border-top:1px solid var(--hairline)}
+.timeline li{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--hairline);font-size:13.5px}
+.timeline .yr{flex:0 0 52px;font-family:var(--serif);color:var(--gold-ink);font-variant-numeric:tabular-nums}
 
 /* 関連記事 */
 .related{margin:44px 0 0}
