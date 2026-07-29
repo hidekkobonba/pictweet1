@@ -25,7 +25,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
    │    ├─ columns.css               … スタイル（白×深緑×ゴールド／ライト・ダーク対応）
    │    └─ columns.js                … 目次開閉・症例タブ・絞り込み等（軽量）
    └─ images/                        … 各ページが読み込む画像
-        ├─ hero.jpg / ogp.jpg(任意)
+        ├─ hero.jpg / ogp.jpg(SNSシェア画像・設定済み)
         ├─ hane.jpg                  … 院長の顔写真
         ├─ illust-*.jpg (図解)
         └─ case-*.jpg (症例)
@@ -63,7 +63,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
 ------------------------------------------------------------
 
   ・ canonical と og:url  … 実際の公開URLに合わせて確認・修正
-  ・ og:image（SNSサムネ）… images/ogp.jpg を用意する場合は images に追加（任意）
+  ・ og:image（SNSサムネ）… images/ogp.jpg 設定済み（1200×630）。差し替えたい場合は同名で置換
 
   ※ 住所・電話番号・予約URL・LINE・Instagram（@zetith_hane）・院長写真は設定済みです。
   ※ 全9ページとも公開可能な状態です（以前ご案内した「貴族手術ページの公開保留」は解消済み）。
