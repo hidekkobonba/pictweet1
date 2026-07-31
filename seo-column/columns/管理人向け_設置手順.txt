@@ -3,7 +3,7 @@
                                     ※ 最新版（モバイルファースト刷新）
 ============================================================
 
-鼻整形コラム 全11ページ（一覧＋記事10本）と、使用画像（images）、
+鼻整形コラム 全12ページ（一覧＋記事11本）と、使用画像（images）、
 共通デザインファイル（assets）が入っています。院長の顔写真・
 Instagramリンク・リール動画（埋め込み）も設定済みです。
 
@@ -23,6 +23,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
    ├─ kobana-shukusho-fukuoka.html  … 小鼻縮小（鼻翼縮小）      → /ja-jp/clinics/fukuoka/columns/kobana-shukusho-fukuoka
    ├─ hana-seikei-barenai.html      … バレない・傷跡             → /ja-jp/clinics/fukuoka/columns/hana-seikei-barenai
    ├─ hana-seikei-downtime.html     … ダウンタイム              → /ja-jp/clinics/fukuoka/columns/hana-seikei-downtime
+   ├─ clinic-erabikata-fukuoka.html … クリニック・医師の選び方  → /ja-jp/clinics/fukuoka/columns/clinic-erabikata-fukuoka
    ├─ assets/                        … 共通デザイン（全ページ共通）
    │    ├─ columns.css               … スタイル（白×深緑×ゴールド／ライト・ダーク対応）
    │    └─ columns.js                … 目次開閉・症例タブ・絞り込み等（軽量）
@@ -72,7 +73,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
   ・ og:image（SNSサムネ）… images/ogp.jpg 設定済み（1200×630）。差し替えたい場合は同名で置換
 
   ※ 住所・電話番号・予約URL・LINE・Instagram（@zetith_hane）・院長写真は設定済みです。
-  ※ 全11ページとも公開可能な状態です（以前ご案内した「貴族手術ページの公開保留」は解消済み）。
+  ※ 全12ページとも公開可能な状態です（以前ご案内した「貴族手術ページの公開保留」は解消済み）。
 
 ------------------------------------------------------------
 ■ WordPress で運用している場合
@@ -86,7 +87,7 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
 ■ 公開後（SEOのために）
 ------------------------------------------------------------
 
-  ・ Google Search Console に各ページのURL（10個）を登録（インデックス登録）
+  ・ Google Search Console に各ページのURL（12個）を登録（インデックス登録）
   ・ sitemap.xml に各URLを追加
 
   ご不明点は制作側までお気軽にご連絡ください。
