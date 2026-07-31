@@ -1,2 +1,3 @@
-/                          /columns/    302
-/ja-jp/clinics/fukuoka/     /columns/    302
+/                          /ja-jp/clinics/fukuoka/columns/    302
+/columns/*                 /ja-jp/clinics/fukuoka/columns/:splat    301
+/ja-jp/clinics/fukuoka/    /ja-jp/clinics/fukuoka/columns/    302

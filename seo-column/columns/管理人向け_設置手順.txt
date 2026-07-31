@@ -12,16 +12,16 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
 ------------------------------------------------------------
 
   columns/
-   ├─ index.html                    … コラム一覧（トップ）      → /columns/
-   ├─ fukuoka-hana-seikei.html      … 柱：クローズド法 総合      → /columns/fukuoka-hana-seikei
-   ├─ hana-seikei-jutsushiki.html   … 術式まるわかりガイド(ハブ) → /columns/hana-seikei-jutsushiki
-   ├─ bichukaku-encho-fukuoka.html  … 鼻中隔延長                → /columns/bichukaku-encho-fukuoka
-   ├─ kizoku-shujutsu-fukuoka.html  … 貴族手術                  → /columns/kizoku-shujutsu-fukuoka
-   ├─ neko-shujutsu-fukuoka.html    … 猫手術                    → /columns/neko-shujutsu-fukuoka
-   ├─ ryubi-fukuoka.html            … 隆鼻術（プロテーゼvs自家組織） → /columns/ryubi-fukuoka
-   ├─ dango-hana-fukuoka.html       … 団子鼻                    → /columns/dango-hana-fukuoka
-   ├─ hana-seikei-barenai.html      … バレない・傷跡             → /columns/hana-seikei-barenai
-   ├─ hana-seikei-downtime.html     … ダウンタイム              → /columns/hana-seikei-downtime
+   ├─ index.html                    … コラム一覧（トップ）      → /ja-jp/clinics/fukuoka/columns/
+   ├─ fukuoka-hana-seikei.html      … 柱：クローズド法 総合      → /ja-jp/clinics/fukuoka/columns/fukuoka-hana-seikei
+   ├─ hana-seikei-jutsushiki.html   … 術式まるわかりガイド(ハブ) → /ja-jp/clinics/fukuoka/columns/hana-seikei-jutsushiki
+   ├─ bichukaku-encho-fukuoka.html  … 鼻中隔延長                → /ja-jp/clinics/fukuoka/columns/bichukaku-encho-fukuoka
+   ├─ kizoku-shujutsu-fukuoka.html  … 貴族手術                  → /ja-jp/clinics/fukuoka/columns/kizoku-shujutsu-fukuoka
+   ├─ neko-shujutsu-fukuoka.html    … 猫手術                    → /ja-jp/clinics/fukuoka/columns/neko-shujutsu-fukuoka
+   ├─ ryubi-fukuoka.html            … 隆鼻術（プロテーゼvs自家組織） → /ja-jp/clinics/fukuoka/columns/ryubi-fukuoka
+   ├─ dango-hana-fukuoka.html       … 団子鼻                    → /ja-jp/clinics/fukuoka/columns/dango-hana-fukuoka
+   ├─ hana-seikei-barenai.html      … バレない・傷跡             → /ja-jp/clinics/fukuoka/columns/hana-seikei-barenai
+   ├─ hana-seikei-downtime.html     … ダウンタイム              → /ja-jp/clinics/fukuoka/columns/hana-seikei-downtime
    ├─ assets/                        … 共通デザイン（全ページ共通）
    │    ├─ columns.css               … スタイル（白×深緑×ゴールド／ライト・ダーク対応）
    │    └─ columns.js                … 目次開閉・症例タブ・絞り込み等（軽量）
@@ -38,15 +38,19 @@ Instagramリンク・リール動画（埋め込み）も設定済みです。
 ■ 設置手順（3ステップ）
 ------------------------------------------------------------
 
- 1. サーバーの公開フォルダに「columns」フォルダをまるごとアップロード
-    （assets も images も一緒に、同じ位置関係で）。
+ 1. サーバーの /ja-jp/clinics/fukuoka/ の下に「columns」フォルダをまるごと
+    アップロード（assets も images も一緒に、同じ位置関係で）。
+    → 各ページの公開URLは /ja-jp/clinics/fukuoka/columns/... になります。
+    ※ 記事内のリンク・canonical・OGP・構造化データは、すべてこの
+      /ja-jp/clinics/fukuoka/columns/ を前提に設定済みです。設置場所を
+      変える場合は制作側までご連絡ください（一括で修正してお渡しします）。
 
  2. 各ページは上記のURL（拡張子なし）で開ける想定です。
     ※ サーバーが拡張子なしURL（クリーンURL）に対応していない場合は、
       制作側にご連絡ください。「.html 付きURL」版に一括変更してお渡しします。
 
  3. 福岡院トップページ等から、コラム一覧へリンクを設置。
-      例）<a href="/columns/">コラム</a>
+      例）<a href="/ja-jp/clinics/fukuoka/columns/">コラム</a>
 
 ------------------------------------------------------------
 ■ 動画（Instagramリール）について
