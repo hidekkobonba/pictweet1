@@ -292,6 +292,8 @@ ol.flow strong{color:var(--text)}
 
 /* 補足ノート（使いすぎない） */
 .callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:var(--radius-md);padding:16px 18px;margin:0 0 22px;font-size:14.5px;line-height:1.8}
+.risk-block + .callout,.callout + .callout{margin-top:22px}
+.article-prose + .callout,.table-scroll + .callout{margin-top:22px}
 .callout b{color:var(--gold-ink)}
 .callout a{color:var(--gold-ink)}
 
@@ -320,6 +322,7 @@ ol.flow strong{color:var(--text)}
 
 /* 症例ギャラリー（タブ） */
 .case-gallery{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);padding:18px;box-shadow:var(--shadow-soft);margin:8px 0 8px}
+.case-gallery + .case-gallery{margin-top:26px}
 .case-gallery__title{font-family:var(--serif);font-size:14px;color:var(--gold-ink);line-height:1.6;margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid var(--hairline)}
 .case-tabs{display:flex;gap:8px;margin:0 0 14px}
 .case-tab{flex:1;min-height:44px;border:1px solid var(--border);background:var(--surface);border-radius:999px;
